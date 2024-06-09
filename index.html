@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="./assets/images/logo.jpg">
+        <title>Snake Game | Leblond Tristan | LivaCampus</title>
+        <link rel="stylesheet" href="./assets/style.css">
+        <script type="module" src="./assets/utils/index.js"></script>
+    </head>
+    <body>
+        <div class="canva-container">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+        </div>
+        <div class="canva-aside">
+            <ol id="highscores-list"></ol>
+            <form id="scoreboardForm" class="hidden">
+                <label for="username">Votre pseudo :</label>
+                <input type="text" id="scoreboardInput" pattern=".{6,20}" required>
+                <input type="submit" value="Envoyer">
+            </form>
+            <button id="replayButton">Rejouer</button>
+        </div>
+    </body>
+</html>
